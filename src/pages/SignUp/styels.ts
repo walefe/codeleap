@@ -4,7 +4,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2.4rem;
-
   max-width: 50rem;
   width: 100%;
 
@@ -42,8 +41,14 @@ export const Button = styled.button`
   height: 3.3rem;
   align-self: flex-end;
   margin-top: 2.6rem;
-  background-color: black;
+  background-color: #f56161;
   border: 0;
   color: #fff;
   font-weight: bold;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
 `
